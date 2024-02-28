@@ -217,17 +217,15 @@ body {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   overflow: hidden;
-  padding: 10px; /* Legg til padding for å gi plass til teksten */
-  z-index: 10; 
+  padding: 10px;  
   font-family: Encode Sans;
   font-weight: Regular;
   font-size: 22px;
   text-align: left;
   z-index: 10; 
 }
-}
+
 #v1_21 {
-  z-index: -1; 
   width: 144px;
   height: 49px;
   background: rgba(120,0,240,1);
@@ -240,7 +238,7 @@ body {
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  overflow: hidden;
+  overflow: hidden; 
 }
 #v1_22 {
   width: 99px;
