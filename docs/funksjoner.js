@@ -1,5 +1,5 @@
 window.onload = function() {
-  addPlaceholder(); // Sørger for at teksten vises ved start
+  addPlaceholder();
 };
 
 function removePlaceholder() {
