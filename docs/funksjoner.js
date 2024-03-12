@@ -1,17 +1,24 @@
 window.onload = function() {
-  addPlaceholder();
+  addPlaceholder('v1_20');
+  addPlaceholder('mailboks');
+  addPlaceholder('passordboks');
 };
 
-function removePlaceholder() {
-  var input = document.getElementById('v1_20');
-  if (input.value == 'Søk') {
+function removePlaceholder(elementId) {
+  var input = document.getElementById(elementId);
+  if (input.value == input.placeholder) {
     input.value = '';
   }
 }
 
-function addPlaceholder() {
-  var input = document.getElementById('v1_20');
+function addPlaceholder(elementId) {
+  var input = document.getElementById(elementId);
   if (input.value == '' || input.value == null) {
-    input.value = 'Søk';
+    input.value = input.placeholder;
   }
+}
+
+function toggleCheckmark() {
+  var huskMeg = document.getElementById('husk_meg');
+  huskMeg.classList.toggle('checked');
 }
