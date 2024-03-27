@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet" />
+	<title>Søkeresultater</title>
+</head>
+<body>
+<!-- 
+MERK: koden er generert av en Figma plugin som 
+	  generer HTML og CSS kode av design. Koden er 
+	  deretter endret på for å gjøre ønskede justeringer.
+	  Koden er ikke optimalt satt opp grunnet tidshensyn.
+-->
+    <h1>Søkeresultater for: <span id="searchValue"></span></h1>
+    <div id="searchResults">
+    </div>
+<!-- Koden i script elementet under er generert av AI -->
+    <script>
+        // Henter søkeparameteren fra URL-en
+        var searchParams = new URLSearchParams(window.location.search);
+        var searchValue = searchParams.get('q');
+
+        // Setter inn søkeverdien i overskriften
+        document.getElementById('searchValue').textContent = searchValue;
+
+        // Liste over lenker til sidene
+        var pages = [
+            { name: 'Hjem', url: 'index.html' },
+            { name: 'Booking', url: 'booking.html' },
+            { name: 'Om oss', url: 'omoss.html' },
+            { name: 'Kontakt oss', url: 'kontaktoss.html' },
+            { name: 'Personvern/Sikkerhet', url: 'personvern.html' },
+            { name: 'Anmeldelse', url: 'anmeldelse.html' },
+            { name: 'Medlemskap', url: 'medlemskap.html' },
+            { name: 'Fasiliteter', url: 'fasiliteter.html' }
+            // Legg til flere sider etter behov
+        ];
+
+        // Finn div-elementet der lenkene skal legges til
+        var searchResultsDiv = document.getElementById('searchResults');
+
+        // Loop gjennom listen over sider og legg til lenker til div-elementet
+        pages.forEach(function(page) {
+            var link = document.createElement('a');
+            link.href = page.url;
+            link.textContent = page.name;
+            link.className = 'search-result';
+            searchResultsDiv.appendChild(link);
+            searchResultsDiv.appendChild(document.createElement('br')); // Legg til linjeskift etter hver lenke
+        });
+    </script>
+</body>
+</html>

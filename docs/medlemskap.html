@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Expletus+Sans&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=SeoulHangang+CM&display=swap" rel="stylesheet" />
+<link href="./css/main.css" rel="stylesheet" />
+<script src="funksjoner.js"></script>
+<title>Document</title>
+</head>
+<body>
+<!-- 
+MERK: koden er generert av en Figma plugin som 
+	  generer HTML og CSS kode av design. Koden er 
+	  deretter endret på for å gjøre ønskede justeringer.
+	  Koden er ikke optimalt satt opp grunnet tidshensyn.
+-->
+<div class = "navbar">
+	<p><a href="loginn.html" class="logginn">Logg inn</a></p>
+	<div id="v1_21"></div>
+	<form action="siden-med-lenker.html" method="GET">
+	    <input type="text" name="q" placeholder="Søk">
+	</form>
+	<div class="dropdown">
+		<p><a href="omoss.html" class="omoss">Om oss</a></p>
+		<div class="dropdown-content">
+			<a href="omoss.html">Om oss</a>
+			<a href="kontaktoss.html">Kontakt oss</a>
+			<a href="personvern.html">Personvern/Sikkerhet</a>
+			<a href="anmeldelse.html">Anmeldelse</a>
+		</div>
+	</div>
+	
+	<div id="v1_19">
+	</div>
+	<p><a href="medlemskap.html" class="medlemskap">Medlemskap</a></p>
+	<div id="v1_18"></div>
+	<p><a href="fasiliteter.html" class="fasilitet">Fasiliteter</a></p>
+	<div id="v1_17"></div>
+	
+	<div class="dropdown">
+		<p><a href="booking.html" class="booking">Booking</a></p>
+			<div class="dropdown-content2">
+			<a href="booking.html">Booking</a>
+			<a href="planløsning.html">Planløsning</a>
+		</div>
+	</div>
+	
+	<div id="v1_419"></div>
+	<p><a href="index.html" class="hjem">Hjem</a></p>
+	<div id="v1_16"></div>
+</div>
+<div class = "logo">
+	<a href="index.html" id="v1_10"></a>
+	<span id="v1_11">CAPSTONE <br>
+					 PROJECT</span>
+</div>
+<div id="bakgrunn"></div>
+
+<div class="bokser">
+    <!-- boks 1 Dag--> 
+    <span class="v1_35">Dag</span>
+    <span class="v1_36">699kr</span>
+    <a href="#kjøpdag" onclick="showAlert('Dag')">
+        <span class="v1_50">Kjøp nå</span>
+    </a>
+    <span class="v1_58">
+        En praktisk løsning for <br>
+        sporadisk arbeid, gir tilgang <br>
+        til fellesfasiliteter i <br>
+        kontorfellesskapet for <br>
+        en enkelt dag.
+    </span>
+    <a href="#kjøpdag" class="v1_45" onclick="showAlert('Dag')"></a>
+    <div class="v1_21"></div>
+
+    <!-- boks 2 Måned-->
+    <div class="måned"> 
+        <span class="v1_43">Måned</span>
+        <span class="v1_39">6000kr/mnd</span>
+        <span class="v1_57">
+            Gir stabilt arbeidsrom i <br>
+            fellesområdene i <br>
+            kontorfellesskapet for en hel <br>
+            måned, ideelt for<br>
+            ulike virksomheter.
+        </span>
+        <a href="#kjøpmåned" onclick="showAlert('Måned')">
+            <span class="v1_52">Kjøp nå</span>
+        </a>
+        <a href="#kjøpmåned" class="v1_49" onclick="showAlert('Måned')" ></a>
+        <div class="v1_25"></div>
+    </div>
+
+    <!-- boks 3 Student--> 
+    <span class="v1_34">Student</span>
+    <span class="v1_40">9000/pr. semester</span>
+    <span class="v1_56">
+        Tilrettelagt for studenter med <br>
+        rimelige priser og tilgang til <br>
+        fellesfasiliteter, perfekt for <br>
+        produktive studie- <br>
+        og arbeidsøkter.
+    </span>
+    <a href="#kjøpstudent" onclick="showAlert('Student')">
+        <span class="v1_53">Kjøp nå</span>
+    </a>
+    <a href="#kjøpstudent" class="v1_48" onclick="showAlert('Student')"></a>
+    <div class="v1_24"></div>
+
+    <!-- boks 4 Årlig--> 
+    <span class="v1_41">Årlig</span>
+    <span class="v1_37">50 000/år</span>
+    <span class="v1_59">
+        Medlemskap uten<br>
+        langvarige forpliktelser, gir<br>
+        kontinuerlig tilgang til <br>
+        kontorfellesskapets <br>
+        fasiliteter for bedrifter <br>
+        eller enkeltpersoner.
+    </span>
+    <a href="#kjøpårlig" onclick="showAlert('Årlig')">
+        <span class="v1_51">Kjøp nå</span>
+    </a>
+    <a href="#kjøpårlig" class="v1_46" onclick="showAlert('Årlig')"></a>
+    <div class="v1_22"></div>
+
+    <!-- boks 5 Privatkontor--> 
+    <span class="v1_42">Privatkontor</span>
+    <span class="v1_38">20 000/mnd</span>
+    <span class="v1_60">
+        Dedikert arbeidsplass med <br>
+        konfidensielle muligheter <br>
+        innen kontorfellesskapet <br>
+        med tilgang til<br>
+        fellesfasiliteter og <br>
+        samarbeidsmuligheter.
+    </span>
+    <a href="#kjøpprivatkontor" onclick="showAlert('Privatkontor')">
+        <span class="v1_54">Kjøp nå</span>
+    </a>
+    <a href="#kjøpprivatkontor" class="v1_47" onclick="showAlert('Privatkontor')"></a>
+    <div class="v1_23"></div>
+</div>
+<!-- scriptet under er generert av AI-->
+<script>
+    function showAlert(membership) {
+        alert(membership + " medlemskap er valgt");
+    }
+</script>
+<div class="v1_2"></div>
+<div class="v1_3"></div>
+<div class="v1_4"></div>
+<div class="v1_5"></div>
+<div class="v1_16"></div>
+<div class="v1_17"></div>
+<div class="v1_20"></div>
+<div class="v1_21"></div>
+<div class="v1_22"></div>
+<div class="v1_23"></div>
+<div class="v1_24"></div>
+<div class="v1_25"></div>
+<div class="v1_26"></div>
+<div class="name"></div>
+<div class="name"></div>
+<div class="name"></div>
+<div class="name"></div>
+<div class="name"></div>
+<div class="name"></div>
+<span class="v1_55">Medlemskap</span>
+
+<footer class="medlemfooter">
+	<div id="v1_324"></div>
+	<span id="v1_325">Følg oss</span>
+	<div id="v1_331"></div>
+</footer>
+</body>
+</html>
