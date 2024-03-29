@@ -1,3 +1,4 @@
+/*All kode på denne filen er generert av AI.*/
 function sjekkLogginn() {
   // Hent verdien fra inndataboksene
   var mail = document.querySelector('.v39_3143').value;

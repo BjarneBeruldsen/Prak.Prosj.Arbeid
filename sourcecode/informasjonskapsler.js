@@ -1,3 +1,4 @@
+/*All kode på denne filen er generert av AI.*/
         function toggleCookies() {
             var button = document.getElementById('cookieBtn');
             if (button.textContent === 'Aktiver') {

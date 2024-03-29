@@ -1,3 +1,4 @@
+/*All kode på denne filen er generert av AI.*/
 // Finner input-elementet med ID v1_20
 var searchInput = document.getElementById('v1_20');
 
