@@ -1,3 +1,4 @@
+/*All kode på denne filen er generert av AI.*/
 let rooms = Array(12).fill(false);
 
 function bookRoom(roomNumber) {

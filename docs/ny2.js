@@ -1,3 +1,4 @@
+/*All kode på denne filen er generert av AI.*/
 var element1 = document.querySelector('.v9_50');
 var element2 = document.querySelector('.v9_51');
 var element3 = document.querySelector('.v9_38');
